@@ -1,0 +1,38 @@
+// about
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+.about {
+  @include flex(space-around);
+  margin-top: 2rem;
+  
+  &__image {
+    width: 45%;
+    height: 350px;
+    @include flex(center);
+    img {
+      width: 100%;
+    }
+  }
+  &__text {
+    width: 45%;
+  
+    @include flex(center,flex-start);
+    flex-direction: column;
+   
+    h2 {
+      @include setFont("playfair Display", 700, 1.5rem, 30px);
+    }
+    p {
+      @include setFont("Mulish", 300, 1rem, 20px);
+      color: #7d7987;
+      text-align: justify;
+    }
+    button {
+        @include btn(1.6rem, 0.3rem, $mainColor, $btnBorderColor);
+      margin: 10px 0px;
+      
+     
+    }
+  }
+}

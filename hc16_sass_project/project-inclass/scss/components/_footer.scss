@@ -1,0 +1,17 @@
+// footer
+@use "../abstracts/mixin" as *;
+
+.footer {
+  background-color: #f9f9fb;
+  height: 10vh;
+  margin: auto;
+  @include flex(center);
+  &__icons i {
+    padding: 0.4rem;
+    transition: all 1s;
+    cursor: pointer;
+    &:hover{
+        color:blue;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+// guide
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+
+.guide{
+    @include flex(center);
+    margin: 3rem auto;
+    gap:2rem;
+    &__text{
+        width: 45%;
+        @include flex(center,flex-start);
+        flex-direction: column;
+        &--header{
+            @include setFont("Playfair Display",700,1.5rem,30px);
+        }
+        &--paragraph{
+            @include setFont("Mulish",200,.9rem,20px);
+            color: $textColor;
+            text-align: justify;
+
+        }
+        &--button{
+            margin: 1rem 0;
+            @include btn(.6rem,.3rem,$mainColor,$btnColor);
+            @include setFont("Inter",300,1rem,15px);
+            width: 40%;
+
+
+        }
+
+    }
+    &__image{
+        width: 45%;
+        height: 350px;
+        background-image: url("../assets/image3.png");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

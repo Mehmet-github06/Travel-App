@@ -1,0 +1,74 @@
+// destination
+@use "../abstracts/mixin" as *;
+
+.destination {
+  margin: 2rem 0rem;
+  position: relative;
+  @include flex(center);
+  flex-direction: column;
+  gap: 2rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    h3 {
+      @include setFont("Playfair Display", 700, 1.5rem, 1);
+      color: #000000;
+    }
+    button {
+      @include setFont("Inter", 500, 0.8rem, 1);
+      background-color: #ffffff;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fb8f1d;
+    }
+  }
+  &__group {
+    width: 100%;
+    margin: auto;
+    @include flex(center);
+    gap: 0.5rem;
+    position: relative;
+    &--card {
+      width: 22%;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      background: #c4c4c4;
+      border-radius: 8px 8px 8px 0px;
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 2s;
+        cursor: zoom-in;
+        &:hover {
+          scale: (110%);
+        }
+      }
+      p {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        min-width: 60%;
+        background: #ffffff;
+        overflow: hidden;
+        border-radius: 0px 6px 0px 0px;
+        line-height: 20px;
+        span:nth-child(1){
+            @include setFont("Inter",600,.9rem,1);
+            color: #042521;
+        }
+        span:nth-child(2){
+            @include setFont("Inter",200,.7rem,1);
+            color: #80918e;
+
+        }
+      }
+    }
+  }
+}
