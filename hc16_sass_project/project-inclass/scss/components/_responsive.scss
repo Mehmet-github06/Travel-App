@@ -4,6 +4,14 @@
 @media screen and (max-width: 400px) {
   .home__image {
     display: none;
+    .about__image{
+      img{
+        max-height: 200px !important;
+        width: 200px !important;
+      }
+    
+      
+    }
   }
 }
 
@@ -146,9 +154,6 @@
       }
     }
   }
-}
-
-@include media-md {
 }
 
 @include media-lg {

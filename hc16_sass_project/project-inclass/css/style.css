@@ -72,6 +72,10 @@
   .home__image {
     display: none;
   }
+  .home__image .about__image img {
+    max-height: 200px !important;
+    width: 200px !important;
+  }
 }
 @media screen and (max-width: 600px) {
   .header {
