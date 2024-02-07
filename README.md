@@ -7,12 +7,18 @@ This project is a simple web interface designed for a travel site using HTML, CS
 
 - HTML
 - CSS
+- SASS
+- JS
 - Font Awesome (for icons)
 - Google Fonts (for fonts)
+## Screenshots
+
+![Screenshot 1](./assets/Screenshot_3.jpg)
+![Screenshot 2](./assets/Screenshot_1.jpg)
 
 ## Live Demo
 
-[Live Demo](https://example.com)
+[Live Demo](https://sass-2-c6db.vercel.app/)
 
 ## Project Description
 
